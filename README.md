@@ -1,1 +1,1 @@
-# Hogan's NextJS Frontend 
+# Hogan's NextJS Frontend - Development
