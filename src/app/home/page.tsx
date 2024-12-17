@@ -22,21 +22,15 @@ export default function Home() {
                 <div className="py-1 md:pb-8 grid grid-cols-3">
                     <div className="pl-4 pt-1 block">
                         <Logo />
+                        <p className="text-center">{data.message}</p>
                     </div>
                     <div>
-
                     </div>
                     <div className="pl-4 pt-1 block">
                         <ProfileCard />
                     </div>
                 </div>
             </Container>
-
-
-
-            <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-                {data.message}
-            </div>
         </>
     );
 }
