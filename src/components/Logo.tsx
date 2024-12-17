@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react';
-import '../styles/Logo.scss';
+import '@/styles/Logo.scss';
 
 interface Square {
     x1: number;
@@ -28,12 +28,12 @@ interface State {
 }
 
 class Logo extends React.Component<{}, State> {
-    private canvasRef: any;
+    private canvasRef: React.RefObject<any>;
     private canvas: HTMLCanvasElement | null = null;
     private contextCv: CanvasRenderingContext2D | null = null;
-    private intervalId: any; // Store the interval ID
+    private intervalId: number | NodeJS.Timeout | null = null; // Store the interval ID
 
-    constructor(props: {}) {
+    constructor(props: any) {
         super(props);
 
         // Initialize the square state
@@ -56,11 +56,13 @@ class Logo extends React.Component<{}, State> {
             curAngleSmallCir: 0,
         };
 
-        this.canvasRef = React.createRef();
+        this.canvasRef = React.createRef<HTMLCanvasElement>();
     }
 
     componentDidMount() {
-        this.canvas = this.canvasRef.current; // Assign the canvas reference
+        if (this.canvasRef) {
+            this.canvas = this.canvasRef.current; // Assign the canvas reference
+        }
         if (this.canvas) {
             this.contextCv = this.canvas.getContext('2d'); // Get the 2D rendering contextCv
             this.initialize();
@@ -84,13 +86,6 @@ class Logo extends React.Component<{}, State> {
         const frame_width = this.canvas.width;
         const frame_height = this.canvas.height;
 
-        const beta = 30;
-        const radians_beta = (Math.PI / 180) * beta;
-        const E = 10;
-
-        const alpha = 100;
-        const radians_alpha = (Math.PI / 180) * alpha;
-
         this.setState(
             {
                 square: {
@@ -109,12 +104,6 @@ class Logo extends React.Component<{}, State> {
                     radius: 1
                 },
                 curAngleSmallCir: 90,
-                // satellitePoint: {
-                //     x_ord: (1 / 2) * (5 * this.canvas.height / 64) * Math.cos(radians_alpha) + E * Math.cos(radians_beta) + this.canvas.width / 2,
-                //     y_ord: (1 / 2) * (5 * this.canvas.height / 64) * Math.sin(radians_alpha) - E * Math.sin(radians_beta) + 13 * this.canvas.height / 32,
-                //     beta: 30,
-                //     E: 20
-                // }
             },
             this.drawShape // Draw the square after initializing
         );
@@ -164,7 +153,7 @@ class Logo extends React.Component<{}, State> {
 
         if (!this.canvas) return;
 
-        const { x_center, y_center, radius } = this.state.smallCircle
+        const { radius } = this.state.smallCircle
 
         const originX = this.canvas.width / 2
         const originY = 13 * this.canvas.height / 32
