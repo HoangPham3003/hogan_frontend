@@ -1,3 +1,5 @@
+/* eslint-disable  @typescript-eslint/no-explicit-any */
+
 'use client'
 
 import React from 'react';
@@ -27,13 +29,13 @@ interface State {
     curAngleSmallCir: number;
 }
 
-class Logo extends React.Component<{}, State> {
+class Logo extends React.Component<Record<string, never>, State> {
     private canvasRef: React.RefObject<any>;
     private canvas: HTMLCanvasElement | null = null;
     private contextCv: CanvasRenderingContext2D | null = null;
     private intervalId: number | NodeJS.Timeout | null = null; // Store the interval ID
 
-    constructor(props: any) {
+    constructor(props: Record<string, never>) {
         super(props);
 
         // Initialize the square state
