@@ -12,7 +12,7 @@ const Navbar = () => {
                     <Link href="/" className="text-[#03FFF7] text-4xl transition-colors duration-300">
                         Hogan Pham
                     </Link>
-                    <span className="bg-purple-100 text-purple-800 text-xs ml-2 mr-2 px-3 py-1 rounded-full dark:bg-orange-500 dark:text-blue-800 font-bold">Open to work</span>
+                    <span className="text-xs ml-2 mr-2 px-3 py-1 rounded-full bg-orange-500 text-blue-800 font-bold">Open to work</span>
                 </div>
                 <div className="hidden md:flex space-x-6">
                     <Link href="/home" className="nav-link">Home</Link>

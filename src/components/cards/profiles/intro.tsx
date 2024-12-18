@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export function Intro() {
     return (
-        <div className="dark:text-white">
+        <div className="text-white">
             <p className="my-5 text-2xl font-bold">Welcome to my profile!</p>
             <p className="my-5">My name is <b className="text-[#03FFF7]">Hoang Pham</b>, you can call me <b className="text-[#03FFF7]">Hogan</b> that stems from Irish roots and holds the meaning <b className="text-[#03FFF7]">"young warrior"</b>.</p >
             <p className="flex my-5">
