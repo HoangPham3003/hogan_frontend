@@ -4,7 +4,9 @@ export default function PortfolioPage() {
 
     return (
         <>
-            <div>Portfolio page</div>
+            <div className='mt-5 text-2xl text-yellow-400'>
+                <p className="text-center">Portfolio has been updating...</p>
+            </div>
         </>
     );
 }
