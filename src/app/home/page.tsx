@@ -1,8 +1,8 @@
-import Logo from "@/components/Logo";
 import { ProfileCard } from "@/components/cards/profiles";
 import { Container } from '@/components/ui/container'
 import { Intro } from '@/components/cards/profiles/intro';
 import { FooterBottom } from "@/components/Footer";
+import Logo from "@/components/Logo";
 
 export default function Home() {
     return (
