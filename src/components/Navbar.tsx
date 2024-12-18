@@ -15,7 +15,7 @@ const Navbar = () => {
                     <span className="bg-purple-100 text-purple-800 text-xs ml-2 mr-2 px-3 py-1 rounded-full dark:bg-orange-500 dark:text-blue-800 font-bold">Open to work</span>
                 </div>
                 <div className="hidden md:flex space-x-6">
-                    <Link href="/" className="nav-link">Home</Link>
+                    <Link href="/home" className="nav-link">Home</Link>
                     <Link href="/#" className="nav-link">About</Link>
                 </div>
             </nav>
