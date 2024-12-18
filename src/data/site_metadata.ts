@@ -7,7 +7,7 @@ export const SITE_METADATA = {
     language: 'en-us',
     siteUrl: 'https://www.hogan-pham.com',
     email: 'hogan.hph@gmail.com',
-    github: 'https://github.com/HoangPham3003',
+    github: 'https://github.com/HoganHPH',
     address: "80220 Joensuu, Finland",
-    siteLogo: `${process.env.BASE_PATH || ''}/static/images/avatar.jpg`,
+    siteAvatar: `${process.env.BASE_PATH || ''}/static/images/avatar.jpg`,
 }

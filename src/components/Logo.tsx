@@ -194,9 +194,9 @@ class Logo extends React.Component<Record<string, never>, State> {
         this.drawRectangle(3 * this.canvas.width / 8, this.canvas.height / 4, this.canvas.width / 4, 3 * this.canvas.height / 16, "#0f172a");
         this.drawRectangle(3 * this.canvas.width / 8, 9 * this.canvas.height / 16, this.canvas.width / 4, 3 * this.canvas.height / 16, "#0f172a");
 
-        this.contextCv.fillStyle = "#c026d3";
+        this.contextCv.fillStyle = "#03FFF7";
         this.contextCv.font = `${this.canvas.width / 16}px Arial`;
-        this.contextCv.fillText("Moi!", 14.5 * this.canvas.width / 32 - 2, 3 * this.canvas.height / 4);
+        this.contextCv.fillText("Moi", 14.5 * this.canvas.width / 32, 3 * this.canvas.height / 4);
 
         this.drawRectangle(this.canvas.width / 2 - 5, this.canvas.height / 2 - 5, 10, 10, "#03FFF7");
 

@@ -1,5 +1,5 @@
 import { SITE_METADATA } from '@/data/site_metadata'
-import { Mail, MapPin, BookOpenText, University } from 'lucide-react'
+import { Mail, MapPin, BookOpenText, University, Github } from 'lucide-react'
 import '@/styles/profiles/profile_info.scss'
 
 
@@ -50,6 +50,14 @@ export function ProfileCardInfo() {
                     </p>
                 </div>
 
+                <div className="flex items-center text-gray-200 ">
+                    <img height="20" width="20" src="https://cdn.simpleicons.org/github/03FFF7" />
+                    <p className="flex items-center px-2">
+                        <a className="info-link" target='_blank' href={SITE_METADATA.github}>
+                            /HoganHPH
+                        </a>
+                    </p>
+                </div>
             </div>
         </div >
     )

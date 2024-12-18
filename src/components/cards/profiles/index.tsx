@@ -62,7 +62,7 @@ export function ProfileCard() {
                 )}
             >
                 <Image
-                    src={SITE_METADATA.siteLogo}
+                    src={SITE_METADATA.siteAvatar}
                     alt={SITE_METADATA.title}
                     width={550}
                     height={350}
