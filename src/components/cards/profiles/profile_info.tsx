@@ -1,5 +1,5 @@
 import { SITE_METADATA } from '@/data/site_metadata'
-import { Mail, MapPin, BookOpenText, University, Github } from 'lucide-react'
+import { Mail, MapPin, BookOpenText, University } from 'lucide-react'
 import '@/styles/profiles/profile_info.scss'
 
 

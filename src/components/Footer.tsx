@@ -1,7 +1,11 @@
 import { SITE_METADATA } from '@/data/site_metadata'
 
 
-export function FooterBottom() {
+interface endmsgProps {
+    msg: string
+}
+
+export default function FooterBottom(endmsgProps: endmsgProps) {
     return (
         <footer>
             <div className="mt-16 mx-20 flex flex-col items-center border-t border-t-[#03FFF7] p-10">
@@ -11,7 +15,7 @@ export function FooterBottom() {
                     <div>{`© ${new Date().getFullYear()}`}</div>
                 </div>
                 <div>
-                    <p className='text-gray-600'>"This is not the end, it's just the beginning."</p>
+                    <p className='text-gray-600'>{endmsgProps.msg}</p>
                 </div>
             </div>
         </footer>

@@ -1,0 +1,35 @@
+/* Snowflake Animations */
+@keyframes snowFall {
+    0% {
+        transform: translateY(-10px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(100vh);
+        opacity: 1;
+    }
+}
+
+@keyframes snowSwing {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(15px);
+    }
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    width: 8px;
+    height: 8px;
+    background: white;
+    opacity: 0.8;
+    border-radius: 50%;
+    animation: snowFall linear infinite, snowSwing ease-in-out infinite;
+}

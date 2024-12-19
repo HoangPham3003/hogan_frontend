@@ -191,8 +191,8 @@ class Logo extends React.Component<Record<string, never>, State> {
         this.drawRotatedSquare();
 
         this.drawRectangle(this.canvas.width / 4, this.canvas.height / 4, this.canvas.width / 2, this.canvas.height / 2, "#000000");
-        this.drawRectangle(3 * this.canvas.width / 8, this.canvas.height / 4, this.canvas.width / 4, 3 * this.canvas.height / 16, "#0f172a");
-        this.drawRectangle(3 * this.canvas.width / 8, 9 * this.canvas.height / 16, this.canvas.width / 4, 3 * this.canvas.height / 16, "#0f172a");
+        this.drawRectangle(3 * this.canvas.width / 8, this.canvas.height / 4, this.canvas.width / 4, 3 * this.canvas.height / 16, "#0b0b1d");
+        this.drawRectangle(3 * this.canvas.width / 8, 9 * this.canvas.height / 16, this.canvas.width / 4, 3 * this.canvas.height / 16, "#0b0b1d");
 
         this.contextCv.fillStyle = "#03FFF7";
         this.contextCv.font = `${this.canvas.width / 16}px Arial`;
@@ -200,9 +200,9 @@ class Logo extends React.Component<Record<string, never>, State> {
 
         this.drawRectangle(this.canvas.width / 2 - 5, this.canvas.height / 2 - 5, 10, 10, "#03FFF7");
 
-        this.drawCircle(this.canvas.width / 2, 13 * this.canvas.height / 32, 5 * this.canvas.height / 64, "#0f172a");
-        this.drawCircle(13 * this.canvas.width / 32, 35 * this.canvas.height / 64, 3 * this.canvas.height / 32 - 1, "#0f172a");
-        this.drawCircle(19 * this.canvas.width / 32, 35 * this.canvas.height / 64, 3 * this.canvas.height / 32 - 1, "#0f172a");
+        this.drawCircle(this.canvas.width / 2, 13 * this.canvas.height / 32, 5 * this.canvas.height / 64, "#0b0b1d");
+        this.drawCircle(13 * this.canvas.width / 32, 35 * this.canvas.height / 64, 3 * this.canvas.height / 32 - 1, "#0b0b1d");
+        this.drawCircle(19 * this.canvas.width / 32, 35 * this.canvas.height / 64, 3 * this.canvas.height / 32 - 1, "#0b0b1d");
 
         this.drawCircle(13 * this.canvas.width / 32, 35 * this.canvas.height / 64, 3 * this.canvas.height / 64, "#000000");
         this.drawCircle(19 * this.canvas.width / 32, 35 * this.canvas.height / 64, 3 * this.canvas.height / 64, "#000000");
@@ -231,7 +231,7 @@ class Logo extends React.Component<Record<string, never>, State> {
         const grad = contextCv.createLinearGradient(0, 0, 160, 100);
         grad.addColorStop(0, "#03FFF7");
         grad.addColorStop(0.75, "#a21caf");
-        grad.addColorStop(1, "#0f172a");
+        grad.addColorStop(1, "#0b0b1d");
         contextCv.strokeStyle = grad;
         contextCv.beginPath();
         contextCv.moveTo(x1, y1);

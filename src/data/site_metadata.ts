@@ -10,4 +10,6 @@ export const SITE_METADATA = {
     github: 'https://github.com/HoganHPH',
     address: "80220 Joensuu, Finland",
     siteAvatar: `${process.env.BASE_PATH || ''}/static/images/avatar.jpg`,
+    siteVeoCert: `${process.env.BASE_PATH || ''}/static/images/cert_veo.jpg`,
+    siteFootballPlayer: `${process.env.BASE_PATH || ''}/static/images/football_player.png`,
 }
