@@ -52,7 +52,7 @@ const IntroBanner: React.FC = () => {
                 </p>
 
                 <div className="flex">
-                    <Link target="_blank" href="/curriculum-vitae" className="border border-[#03FFF7] mt-8 flex items-center bg-gradient-to-r hover:bg-gradient-to-l from-cyan-500 to-blue-500 pl-4 pr-2 py-1 rounded-full text-sm font-semibold transition-all">
+                    <Link rel="noopener noreferrer" target="_blank" href={SITE_METADATA.siteCV} className="border border-[#03FFF7] mt-8 flex items-center bg-gradient-to-r hover:bg-gradient-to-l from-cyan-500 to-blue-500 pl-4 pr-2 py-1 rounded-full text-sm font-semibold transition-all">
                         SEE MY CV
                         <span className="w-6 h-6 flex items-center justify-center">
                             <svg

@@ -12,4 +12,5 @@ export const SITE_METADATA = {
     siteAvatar: `${process.env.BASE_PATH || ''}/static/images/avatar.jpg`,
     siteVeoCert: `${process.env.BASE_PATH || ''}/static/images/cert_veo.jpg`,
     siteFootballPlayer: `${process.env.BASE_PATH || ''}/static/images/football_player.png`,
+    siteCV: `${process.env.BASE_PATH || ''}/docs/Hoang_Pham_AI_CV.pdf`,
 }

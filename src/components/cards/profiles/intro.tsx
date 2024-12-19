@@ -1,6 +1,7 @@
 'use client'
 
 import Link from "next/link";
+import { SITE_METADATA } from '@/data/site_metadata'
 
 export function Intro() {
     return (
@@ -19,7 +20,7 @@ export function Intro() {
             <div className="flex">
                 <Link className="text-center block border border-[#03FFF7] rounded py-2 px-4 bg-gradient-to-r hover:bg-gradient-to-l from-cyan-500 to-blue-500 text-white" href="portfolio">Portfolio</Link>
 
-                <Link className="mx-4 text-center block border border-[#03FFF7] rounded py-2 px-4 hover:bg-gradient-to-l text-white bg-gradient-to-r from-purple-500 to-pink-500" href="#">My CV</Link>
+                <Link className="mx-4 text-center block border border-[#03FFF7] rounded py-2 px-4 hover:bg-gradient-to-l text-white bg-gradient-to-r from-purple-500 to-pink-500" href={SITE_METADATA.siteCV} target="_blank">My CV</Link>
             </div>
         </div >
     )
