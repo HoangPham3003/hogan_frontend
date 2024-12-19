@@ -16,7 +16,7 @@ const PortfolioHeader: React.FC<PortfolioHeaderProps> = ({ location }) => {
     useEffect(() => {
         const fetchWeather = async () => {
             try {
-                const apiKey = process.env.NEXT_PUBLIC_WEATHER_API_KEY; // Replace with your API key
+                const apiKey = process.env.WEATHER_API_KEY!; // Replace with your API key
                 const lat = 62.6
                 const lon = 29.7667
                 const response = await axios.get(
